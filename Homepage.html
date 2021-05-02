@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>SailorsPotrero</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Ranch/stylesheet.css">
+<link rel="stylesheet" href="../Ranch.font.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/Ranch/images/family.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+.above {
+	height: 100%
+	font-family: "Inconsolata", sans-serif;
+	color: white;
+	position: flex;
+	top: 50%;
+	left: 50%
+{
+	
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+	<div class="w3-col s3">
+      <a href=""https://www.w3schools.com/" class="w3-button w3-block w3-black">Shop</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">About The Farm</a>
+    </div>
+	<div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">Our Animals</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Where</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <img src="../Ranch/images/family2.png" alt="family" style="width:100%;height:100%;">
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">24410 Highway 94 Potrero CA</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About The Farm</span></h5>
+    <p>We're an Active Duty family that has been able to find the time to run a farm and still serve our country.</p>
+		We believe all of our animals have a special place in this world whether they are companions, food, or are just passing through.</p>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Our Animals</span></h5>
+	<img src="../Ranch/images/animals.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+	<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">What We Do</span></h5>
+	<p>We carefully hand raise goats, pigs, chickens, turkeys, ducks, and Emus to sell or trade. We also sell eggs for consumption and/or fertile eggs so you can hatch your own chicks or ducklings.
+		We have many different breeds of chickens and ducks. The cross breed Chickens we have hatched are always so beautiful and friendly!! </p>
+    <p><strong>Opening hours:</strong><br>Mon - Fri: 8am - 8pm</p>
+	<p>Saturday: 9am - 7pm</p>
+	<p>Sunday: Our Family Relaxing Day</p>
+	<p><strong>Contact Us:</strong>
+	<a href="default.asp">
+	<img src="../Ranch/images/facebook.png" alt="https://www.facebook.com/2sailorspotrero" style="width:42px;height:42px;">
+	</a>	
+	
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>24410 Highway 94 potrero CA</p>
+    <img src="../Ranch/images/map.png" alt="family" style="width:500px;height:300px;">
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
